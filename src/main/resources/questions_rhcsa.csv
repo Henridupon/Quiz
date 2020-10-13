@@ -1,0 +1,153 @@
+Question, rightAnswers, wrongAnswer, wrongAnswer,
+What is the name of the creator of UNIX OS?, Richard Stallman, Richard Feymen, James Bering,
+Where does LVM stand for?, Logical Volume Manager,Large Volume Manager,Large Virtual Memory,
+What are the three basig groups for file systems?, Disk based - Network based - Memory based.,
+What does the /etc directory store?, holds the system configuration files.,
+What does the /root directory store?, this is the default home directory location for the root user.,
+What does the /opt directory store?, it can be used to hold additional software that may beed to be installed on the system.,
+What does the /usr directory store?, it stores the user specific information.,
+What does the /usr/bin directory store?, it contains crucual user executable commands.,
+What does the /usr/sbin directory store?, it contains commands required at system boot and those that require the root priveleges.,
+What does the /usr/lib directory store?, it contains shared library routines required by many commands and programs.,
+What does the /usr/include directory store?, it contains header files for C language.,
+What does the /usr/local directory store?, serves as a system administrator repository for storing commands and tools downloaded from the web - developed in-house - or obtained elsewhere.,
+What does the /usr/share directory store?, location of manual pages - documentation - sample templates and configuration files.,
+What does the /usr/src directory store?, store source code.,
+What does the /var directory store?, contains data that frequently changes while the system is operational.,
+What does the /var/log directory store?, stores the most systems log files (boot logs - user logs = etc).,
+What does the /var/opt directory store?, stores log - status and other variable data for sofrware installed in /opt.,
+What does the /var/spool directory store?, stores the cron jobs - mail messages and other queued items.,
+What does the /var/tmp directory store?, temporary files that need to exists for longer periods and are persistent.,
+What does the /tmp directory store?, stores files that survive a reboot but will be removed after 10 days.,
+What does the /dev directory store?, Devices file system to store device nodes for physical and virtual devices.,
+What types of device files are there?, character (raw) and block device files.,
+What does the /prod directory store?, process file system is used to maintain information about the current state of the running kernel.,
+What does the /run directory store?, this stores data for processes running on the system.,
+What does the tree command do?, this shows a tree of files and directories of the selected folder.,
+What does the ls lh command do?, this displays a list of files in human readable format.
+What does the pwd command do?, shows the present working directory.,
+What command will return you to the home directory?, ~cd,
+What command can be used to switch between previous and current directory?, cd -,
+What command can be used to identify your current active terminal session?, tty,
+What does the uptime command do?, it shows how long the OS is running,
+What command can be used to whipe the terminal screen clean?, clear,
+What command can be used to get elementary information about the system?, uname -a,
+Where is the manual (man) information stored?, under the /usr/share/man,
+Which parameter do you have to add to the manual command to search for specific commands?, -k,
+Which two commands can be used to search commands?, man -k and apropos,
+What do you have to do before using the man command?, mandb to build an index database of the manual pages,
+What command can be used to show information about a command?, man -f and whatis,
+What command has the same output as the man -f command?, whatis,
+Which commands can be used to show documentation in great detail?, info and pinfo,
+Which three documentation formats can be downloaded from the redhat website?, PDF - EPUB - HTML,
+Which types of files are supported by RHEL?, regular - directory - block special device - symbolic link - named pipe - socket,
+Which two commands can be used to get information about a file?, stat - file,
+Where does the 'd' at the beginning of each line (when ls) stand for?, directory,
+Which two device file types exist?, character(raw) and block,
+What unique number is assigned to a device?, major number
+What number is assigned to a device when it has identical major numbers?, minor number,
+What is a different name for soft link?, symbolic link or symlink,
+Can there be more than one instance of the same device type in the system?, yes,
+Which two compression programs are there?, gzip/gunzip and bzip2/bunzip2,
+What parameter has to be used to compress an entire diretory tree?, -r, -l, -d,
+What parameter has to be used to diplay compression information about a gzipped file?, -l, -r, -d,
+Which compresses better; bunzip2 or gunzip?, bunzip2, gunzip,
+Which compresses faster; gunzip, bunzip2,
+Which command tool can be used to extract files or an entire directory tree from a single file?, tar,
+What is the parameter to append a file to a directory with tar?, -rvf,
+What is the parameter to list files with the tar command?, -tvf,
+What are the three modes of operation for vim?, command - line - input,
+What is the proper format for replacing first occurence text in a file?, %s/old/new, %s/new/old,
+What is the proper format for replacing all text in a file?, %s/old/new/g, %s/new/old/g,
+What parameter can be used to add a date to a file on creation?, touch -d, touch -t, touch -a
+What parameter can be used to add time to a file on creation?, touch -t, touch -d, touch -a
+What is the proper format to create a file with cat?, cat > catfile, cat < catfile, cat create catfile
+What command can be used to create directories?, mkdir, makedir, mkdirectory
+What command can be used to show the content of a file in reverse?, tac, cat, infor
+What command can be used to show the content of a file streaming?, less -f, head -f, less -s,
+What option counts the number of words in a file?, wc, count, cw
+Can you copy more files than one wiht the cp command?, yes, no
+What option should be added to the cp command to add an entire directory?, -r
+What option should be added to the cp command to preserve attributes?, -p
+What command is used to move or rename files?, mv,
+What parameter should be added to the rm command to remove all its content?, -r, -t, -a
+What is another name for the files metadata information?, inode, anode, node
+Does metadata contain the filename?, no, yes
+What is a hard link?, a mapping between one or more filenames and an inode number,
+Do all hard-linked files have identical metadata?, yes, no
+Is a symlink analogous to a shortcut in MS Windows? yes, no
+What command can be used to create soft links?, -ln -s, sl -l, csl
+Wich parameter should be added to the ln command to create soft links?, -s, -l, -ln
+Will the soft link be removed when the original file is removed?, no, yes
+How can you see if something is a soft link?, ->, softlink,
+Which three classes are present for maintaining file security?, user - group - other, root - group - all, root - group - other,
+Which three permissions exist?, read - write - execute, read - write - delete, read - update - delete,
+Which of the next is the symbolic permission?, chmod 777, chmod u=r,
+How are default permissions calculated?, using umask, using mask, everyone has all permissions,
+Where does chmod 666 stand for?, write - execute, read - write - execute, read - write,
+What command can be used to switch user?, su, us, switch
+What command can be used to show the users that are currently logged in?, who, online, users
+What command can be used to write a message to logged in users?, write <username>, hello <username>, <username> write
+What letter will be shown when a file already has a 'x' bit set for a user group?, 's', 'S', 'X'
+What command can be used to create a group?, groupadd <groupname>, creategroup <groupname>, grpadd <groupname>
+What is the command to add a member to a group?, usermod, adduser, grpadd
+What is the correct command to add user1 to group grp1?, usermod -aG grp1 user1, useradd -g grp1 user1, groupadd user1 grp1
+Where is the sticky bit user for?, to protect files and subdirectories owned by normal users from being deleted or moved, to keep a folder in the user his home directory, to show which files have a symlink,
+Which command revokes the sticky bit from the /tmp?, chmod o+t /tmp, chmod ot /tmp, chmod u+t /tmp,
+Which command adds the sticky bit back to /tmp?, chmod-v +1000 /tmp, chmod -s +1000 /tmp, chmod o+t /tmp,
+What command can be used to find files?, find, search, get,
+What command can be used to find a case insensitive files?, find -iname <filename>, find name -i <filename>, find namei <filename>
+What happens when you type ~ in the command line?, you go back to home, you go to the var directory, you go back to previous directory,
+What parameter is used to NOT find something (negation), -not or !, -!, !!
+What is a correct command to find all files in root excluding the directory's?, find / -not -type d, find / !! -type d, find
+What parameter can be used to search a maximum of subdirectories?, -maxdepth, -max, -depth,
+What is the parameter for modified time when using find?, -mtime, -modtime, -modification,
+What is the correct format to find files in the /etc directory with modified time more than 2000 seconds ago?, find /etc mtime +2000, find /etc mod +2000, find /etc mod 2000,
+What is the correct format to find files that in the /etc are executable by at leas their owner of group members?, find /etc -perm 110
+What is the correct format to find files in the /etc directory with permissions set to read and write for the owher and owning group?, find /etc -perm -ug=rw,
+What parameter can be used to execute a command when using the find command?, -exec, -execute, -e
+What does the locate command do?, discover all occurences of the specified string as they appear in file pathnames.,
+Where does the locate command searches its matches?, /var/lib/mlocate/mlocate.db,
+What parameter can be used to specify the number of occurrences when using the locate command?, -n, -c, -max,
+What command can be used to view the number of directories - files and size information retained in mlocate.db?, -S, -i, -info
+What command shows the ACL settings?, getfacl, display, info
+What command is used to apply - modify and remove ACL settings?, setfacl, setacl, removeacl,
+What is a valid format to change the mask to rw for a file?, setfacl -m:rw filename, setfacl rw filename, setmask rw filename,
+What is a valid format to delete acl set for user1 with file1?, setfacl -x u:user1 file1, setfacl -m u:user1 file1, setfac -d user1 file1
+What is a valid format to delete the acl's on a file(name)?, setfacl -b filename, setfacl -x filename, setfacl remove filename,
+Do subdirectories receive default ACL's from their parent ACL's?, yes, no,
+Where does the who command gets its information from?, /run/utmp, /tmp/run, /var/who.d
+What command can be used to display the history of succesful user login attempts?, last, login, history,
+What command can be used to display the history of unsuccesful user login attempts?, lastb, lastlog, history,
+What command reports the most recent login evidence information for all user accounts?, lastlog, last, lastb
+What command can be used to show the calling user's UID and username?, id, info, user,
+Which three fundamental user account types exist?, root - normal - service, user - root - normal, service - root - user,
+In which directory are the four account information files stored?, /etc, /var, /usr,
+Which four account information files exist?, passwd - shadow - group - gshadow, passwd - group - gpasswd - shadow, passwords - gshadow - shadow - group,
+Does the shadow file have access permissions?, no, yes
+What is another name for the users own group?, User Private Group, User Group, Private Group,
+From which two files will the useradd command gets the defaults?, /etc/default/useradd - /etc/login.defs, /etc/useradd - /etc/login.defs, /etc/default/login.defs - /etc/useradd,
+What command can be used to add a user?, useradd, adduser, newuser,
+What command can be used to modify a user?, usermod, moduser, useradd,
+What command can be used to delete a user?, userdel, deluser, rmuser,
+What command can be used to modify the user's password?, passwd, shadow, gshadow,
+What does the nologin shell do?, used for user accounts that do not require login access on the system,  used for user accounts that do not have a /home directory,  used for user accounts that are created for one session,
+Where can the directory be found that is copied to the /home dir when creating a new user?, /etc/skel, /etc/home, /var/home,
+Where is the password aging information stored for an account?, /etc/shadow, /etc/login.defs, /etc/gshadow,
+Where are the default policies for passowrd aging stored?, /etc/login.defs, /etc/shadow, /etc/gshadow,
+What command can be used to set or alter password aging parameters on an account?, chage, passwd, chacc,
+What is a correct command to delete a user(name) password without expiring?, passwd -d username, passwd -del username, username -d passwd,
+What is the command to lock a user account?, passwd -l username, usermod -l username, shadow -l username,
+What is the correct parameter for passwd to set minimum password expiration?, -n, -m, -x,
+What is the correct parameter to get the status for password for a user?, -S, -s, -t,
+What is the parameter to lock a user with usermod?, -L, -l, -p,
+What is the parameter to unlock a user with usermod?, -U, -u, -p,
+Which file contains group information?, /etc/group, /etc/grp, /var/group,
+Which parameter can be used to add a GID to a group?, -g, -gid, -gp,
+What does the 'su -' do?, ensure that startup scripts for the target user are also executed to provide an environment similar to that of a real login, will change the user,
+Which two commands can be used to get current id of a user?, whoami - logname, whoami - name, whoami - currentid,
+What parameter can be used to use a user command without switching into that suer?, -c, -p, -s,
+Where does sudo stand for?, substitute user do, special user do, super user do,
+
+
+
